@@ -17,13 +17,15 @@
     --color-01: #000;
     --color-02: #fff;
     --color-03: #deebee;
-    --color-04: #1c1e53;
+    --color-04: #cce8ee;
+    --color-04-hover: #5c939f;
+    --color-btn-hover: #5c939f;
     --color-05: #000;
-    --color-06: #42b1c7;
-    --color-07: #148ba3;
-    --color-08: #deebee;
+    --color-06: #deebee;
+    --color-07: #abd4dd;
+    --color-08: #57818a;
     --color-09: #deebee;
-    --color-010: #deebee;
+    --color-010: #abd4dd;
 }
 
 * {
@@ -100,7 +102,7 @@ img {
 .container .sidebar .logo a:hover,
 .container .sidebar .menu ul li:hover a,
 .container .sidebar .menu ul li:hover i {
-    color: var(--color-04);
+    color: var(--color-04-hover);
 }
 
 .container .sidebar .menu h5 {
@@ -275,7 +277,7 @@ img {
 }
 
 .container main .trending .left .info .buttons button:hover {
-    background: #354dc6;
+    background: var(--color-btn-hover);
 }
 
 .container main .trending .left .info .buttons i {
@@ -285,6 +287,12 @@ img {
     border: 1px solid var(--color-01);
     border-radius: 50%;
     padding: 8px;
+
+    transition: all 0.3s ease;
+}
+
+.container main .trending .left .info .buttons i:hover {
+    color: var(--color-btn-hover);
 }
 
 .container main .trending img {
